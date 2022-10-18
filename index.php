@@ -32,10 +32,10 @@ include ('./functions/common_function.php');
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
+                            <a class="nav-link" href="display_all.php">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Register</a>
@@ -51,9 +51,10 @@ include ('./functions/common_function.php');
                         </li>
 
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    <form class="d-flex" action="search_product.php" method="get">
+                        <input class="form-control me-2" type="search" name="search_data" placeholder="Search" aria-label="Search">
+                        <input type="submit" value="Search" class="btn btn-outline-light" name="search_data_product">
+
                     </form>
                 </div>
             </div>
@@ -115,9 +116,9 @@ include ('./functions/common_function.php');
 
     </div><!--/.container-fluid ends-->
 
-    <div class="bg-info p-3 text-center"> <!--Footer starts-->
-        <p>All rights reserved @ - Designed by MMM-2022</p>
-    </div> <!--Footer ends-->
+    <!--Footer starts-->
+    <?php include ('includes/footer.php') ?>
+    <!--Footer ends-->
 
     <!--bootstrap JS link-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
