@@ -60,6 +60,11 @@ include ('./functions/common_function.php');
         </div>
     </nav><!--first child ends-->
 
+    <!--        calling cart function -->
+    <?php
+    cart();
+    ?>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary"> <!--second child starts-->
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
