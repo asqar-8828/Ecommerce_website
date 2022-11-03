@@ -39,6 +39,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\my\Ecommerce_Website\users_area" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +58,7 @@
       <workItem from="1665508272153" duration="71421000" />
       <workItem from="1666505620836" duration="323000" />
       <workItem from="1666506067873" duration="9479000" />
-      <workItem from="1667382955087" duration="8146000" />
+      <workItem from="1667382955087" duration="14436000" />
     </task>
     <servers />
   </component>

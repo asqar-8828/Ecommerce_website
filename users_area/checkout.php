@@ -1,5 +1,5 @@
 <?php
-include ('includes/connect.php');
+include('../includes/connect.php');
 
 ?>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ include ('includes/connect.php');
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--css file-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -25,17 +25,17 @@ include ('includes/connect.php');
 
     <nav class="navbar navbar-expand-lg bg-info"> <!--first child starts-->
         <div class="container-fluid">
-            <img src="./images/logo.png" alt="logo_shopping" class="logo">
+            <img src="../images/logo.png" alt="logo_shopping" class="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="display_all.php">Products</a>
+                        <a class="nav-link" href="../display_all.php">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Register</a>
@@ -45,7 +45,7 @@ include ('includes/connect.php');
                     </li>
 
                 </ul>
-                <form class="d-flex" action="search_product.php" method="get">
+                <form class="d-flex" action="../search_product.php" method="get">
                     <input class="form-control me-2" type="search" name="search_data" placeholder="Search" aria-label="Search">
                     <input type="submit" value="Search" class="btn btn-outline-light" name="search_data_product">
 
@@ -80,10 +80,10 @@ include ('includes/connect.php');
             <div class='row'> <!--products starts-->
                 <?php
                 if (!isset($_SESSION['username'])) {
-                    include ('users_area/user_login.php');
+                    include('user_login.php');
                 }
                 else{
-                    include ('payment.php');
+                    include('payment.php');
                 }
 
                 ?>
@@ -99,7 +99,8 @@ include ('includes/connect.php');
 </div><!--/.container-fluid ends-->
 
 <!--Footer starts-->
-<?php include ('includes/footer.php') ?>
+<?php
+include('../includes/footer.php') ?>
 <!--Footer ends-->
 
 <!--bootstrap JS link-->
